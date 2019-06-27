@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UTSolutions PLC-Ethiopia's leading It company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="jquery/3.3.1/jquery.min.js"></script>
+  <script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+  h1 {
+      /* font-size: 24px; */
+      text-align: center;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h2 {
+      font-size: 20px;
+      /* text-transform: uppercase; */
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+    .navbar {
+      margin-bottom: 0;
+      background-color: #000000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000000 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+      
+  }
+  .jumbotron {
+      background-color: #000000;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #000000;
+  }
+  .carousel-indicators li {
+      border-color: #fff;
+  }
+  .carousel-indicators li.active {
+      background-color: #fff;
+  }  
+  .logo{
+    align-items: top;
+    width: 85px;
+    height: 35px;
+  }
+  .active {
+  background-color: #717171;
+}
+  .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {}
+img {vertical-align: middle;}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+  <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1500, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+        
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+      
+            var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slide");
+              }
+          });
+        });
+      })
+      </script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">UTSOLUTIONS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#partners">PARTNERS</a></li>
+          <li><a href="#pricing">CLIENTS</a></li>
+          <li><a href="#contact">TESTIMONY</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron text-center">
+      <h1>UTSOLUTIONS</h1> 
+      <p>Ethiopia's Leading IT Company</p> 
+  </div>
+  
+ <div id="about" class="container">
+    <h1>About</h1>
+    <h2>UTSolutions is an all-round IT company based in Addis Ababa Ethiopia. UTSolutions was founded on 2013 aiming to provide techonology solutions from ERP development to Networking to Software support and maintainance.</h2> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators  -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+     <!-- Wrapper for slides  -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="imgs/la.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Ethiopia's leading company in ERP development</h3>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="imgs/chicago.jpg" alt="Chicago" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>One of the top networking companies based in Addis Ababa </h3>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="imgs/ny.jpg" alt="New york" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>30+ total years of experience in software maintainance and support</h3>
+          </div>
+        </div>
+      </div>
+  
+       <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h1>SERVICES</h1>
+    <h4>What we offer</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon "><img src="imgs/logo.png"></span>
+        <h4>ERP</h4>
+        <p>Provide ERP to companies and institution</p>
+      </div>
+      <div class="col-sm-4">
+          <span class="glyphicon"><img src="imgs/i.jpg"></span>
+        <h4>NETWORKING</h4>
+        <p>provide Networking services</p>
+      </div>
+      <div class="col-sm-4">
+          <span class="glyphicon "><img src="imgs/seat.png"></span>
+        <h4>WEBSITES</h4>
+        <p>Develop websites with search engine optimization</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+          <span class="glyphicon "><img src="imgs/seat.png"></span>
+        <h4>SUPPORT</h4>
+        <p>We provide IT support to different companies</p>
+      </div>
+      <div class="col-sm-4">
+          <span class="glyphicon"><img src="imgs/seat.png"></span>
+        <h4>MAINTANANCE</h4>
+        <p>Maintanainance</p>
+      </div>
+      <div class="col-sm-4">
+          <span class="glyphicon "><img src="imgs/seat.png"></span>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <p>Hard workers.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h1>Partners</h1><br>
+    <h4>Our Partners</h4>
+    <div class="slideshow-container">
+  
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="imgs/Logo.PNG" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="imgs/seat.PNG" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="imgs/i.JPG" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      </div>
+      <br>
+      <div class="slideshow-container">
+  
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img_nature_wide.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img_fjords_wide.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img_mountains_wide.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        
+  </div>
+
+</body>
+</html>
