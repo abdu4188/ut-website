@@ -1,304 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>UTSolutions PLC-Ethiopia's leading It company</title>
+  
+  <title>UT Solutions- Ethiopia's leading It company</title>
+  <link rel="icon" type="image/ico" href="images/UT.png" />
+  <meta name="description" content="UT solutions is one of the top all round IT services provider in Ethiopia. We provide quality technology solutions for small to huge companies. Contact us to join our list of satisfied customers">
+  <meta name="keywords" content="technology, software development, Ethiopia, Addis Ababa, Networking, ERP, Cybersecurity, CCTV, technology trainning ">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="jquery/3.3.1/jquery.min.js"></script>
   <script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-      
-            // Store hash
-            var hash = this.hash;
-      
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 1500, function(){
-         
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-        
-        $(window).scroll(function() {
-          $(".slideanim").each(function(){
-            var pos = $(this).offset().top;
-      
-            var winTop = $(window).scrollTop();
-              if (pos < winTop + 600) {
-                $(this).addClass("slide");
-              }
-          });
-        });
-      })
-      </script>
-      <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-      </script>
-      
-</head>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/1a1f127cec.js"></script>
+<link href="bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#myPage">UTSOLUTIONS</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#partners">PARTNERS</a></li>
-          <li><a href="#clients ">CLIENTS</a></li>
-          <li><a href="#contact">TESTIMONY</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="jumbotron text-center">
-      <h1>UTSOLUTIONS</h1> 
-      <p>Ethiopia's Leading IT Company</p> 
-  </div>
-  
- <div id="about" class="container">
-    <h1>About</h1>
-    <h2>UTSolutions is an all-round IT company based in Addis Ababa Ethiopia. UTSolutions was founded on 2013 aiming to provide techonology solutions from ERP development to Networking to Software support and maintainance.</h2> 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators  -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-  
-     <!-- Wrapper for slides  -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="imgs/la.jpg" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>Ethiopia's leading company in ERP development</h3>
-          </div>
-        </div>
-  
-        <div class="item">
-          <img src="imgs/chicago.jpg" alt="Chicago" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>One of the top networking companies based in Addis Ababa </h3>
-          </div>
-        </div>
-      
-        <div class="item">
-          <img src="imgs/ny.jpg" alt="New york" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>30+ total years of experience in software maintainance and support</h3>
-          </div>
-        </div>
-      </div>
-  
-       <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  
-  <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-    <h1>SERVICES</h1>
-    <h4>What we offer</h4>
-    <br>
-    <div class="row slideanim">
-      <div class="col-sm-4">
-        <span class="glyphicon "><img src="imgs/logo.png"></span>
-        <h4>ERP</h4>
-        <p>Provide ERP to companies and institution</p>
-      </div>
-      <div class="col-sm-4">
-          <span class="glyphicon"><img src="imgs/i.jpg"></span>
-        <h4>NETWORKING</h4>
-        <p>provide Networking services</p>
-      </div>
-      <div class="col-sm-4">
-          <span class="glyphicon "><img src="imgs/seat.png"></span>
-        <h4>WEBSITES</h4>
-        <p>Develop websites with search engine optimization</p>
-      </div>
-    </div>
-    <br><br>
-    <div class="row slideanim">
-      <div class="col-sm-4">
-          <span class="glyphicon "><img src="imgs/seat.png"></span>
-        <h4>SUPPORT</h4>
-        <p>We provide IT support to different companies</p>
-      </div>
-      <div class="col-sm-4">
-          <span class="glyphicon"><img src="imgs/seat.png"></span>
-        <h4>MAINTANANCE</h4>
-        <p>Maintanainance</p>
-      </div>
-      <div class="col-sm-4">
-          <span class="glyphicon "><img src="imgs/seat.png"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Hard workers.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Container (Portfolio Section) -->
-<div id="partners" class="container-fluid text-center bg-grey">
-    <h1>Partners</h1>
-    <h4>Our Partners</h4>
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="imgs/chicago.jpg" style="width:100%;height:450px">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="imgs/ny.JPG" style="width:100%;height:450px">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="imgs/la.jpg" style="width:100%;height:450px">
-  <div class="text">Caption Three</div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-<script>
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
-    
-  </div>
-  <!-- container clients section -->
-  <div id="clients" class="container-fluid text-center bg-grey">
-      <h1>Clients</h1>
-      <h4>Some of our clients</h4>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="imgs/chicago.jpg" style="width:100%;height:450px">
-    <div class="text">Caption Text</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="imgs/ny.JPG" style="width:100%;height:450px">
-    <div class="text">Caption Two</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="imgs/la.jpg" style="width:100%;height:450px">
-    <div class="text">Caption Three</div>
-  </div>
-  
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  </div>
   <script>
-      var slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      </script>
-      
-    </div>
-  
-</body>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+  </script>
+  <div class="se-pre-con"></div>
+  <div class="body-container">
+    <nav class="navbar navbar-default navbar-fixed-top shadow p-3 mb-5 bg-white rounded" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a href="#" class="pull-left"><img src="images/UT.png" style="width: 180px; height: 40px"></a> 
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#partners">PARTNERS</a></li>
+            <li><a href="#clients ">CLIENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="">HELP DESK</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="homeSection">
+            <div class="content-slider">
+                    <div class="slider">
+                      <div class="mask">
+                        <ul>
+                          <li class="anim1">
+                            <div class="title"><img src="imgs/UT.PNG" alt="UT solutions" style="width: auto; height: 95px;" /></div>
+                            <hr width="70%">
+                            <div class="source">Delivering Ultimate Technologies</div>
+                            <hr width="70%">
+                          </li>
+                          <li class="anim2">
+                            <div class="title">Consultancy</div>
+                            <hr width="70%">
+                            <div class="source">IT Infrastructure consultancy</div>
+                            <hr width="70%">
+                          </li>
+                          <li class="anim3">
+                            <div class="title">Support</div>
+                            <hr width="70%">
+                            <div class="source">Datacenter support</div>
+                            <hr width="70%">
+                          </li>
+                          <li class="anim4">
+                            <div class="title">Designs & Implementation</div>
+                            <hr width="90%">
+                            <div class="source">Ultimate quality end-to-end IT solutions 
+                                    designs and Implementation</div>
+                            <hr width="70%">
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+    </section>
 
-</html>
+    <!-- about section -->
+    <div id="about" class="container">
+            <br><br><br><h1>About</h1>
+            <h2>UT solutions PLC</h2>
+            <div class="desc"><p>UT Solutions PLC is a professional service based company originally from Addis Ababa, Ethiopia. UT Solutions PLC specializes in providing all-rounded IT solutions for businesses ranging from local to international, small to corporate status, Private to Governmental.</p></div>
+    </div>
+
+    <!-- services section -->
+    <div id="services" >
+        <br><br><br><h1>Services</h1>
+        <h2>Our Services</h2>
+      
+      <div  class="grid-container grid.effect">
+          
+        <div id="networking" >
+          <div class="grid-item">
+                  <img src="icons/networking.png" alt="Networking and computing" style="width:170px;height:140px;">
+                  <h2>NETWORKING & COMPUTING</h2>
+               
+                  <p>Enterprise to Small Business Networking and Computing design, implementation, consultancy and optimization services.</p> 
+                </div>
+          </div>
+            
+          <div id="storage" >
+              <div class="grid-item">
+                <img src="icons/storage.png" alt="Storage services" style="width:170px;height:140px;">
+                <h2>STORAGE & BACKUP</h2>
+                <p>Storage and Backup solutions design, implementation, consultancy and optimization services.</p> 
+              </div>
+            </div>
+        
+
+        <div id="erp" >
+            <div id="storage" >
+                <div class="grid-item">
+                    <img src="icons/erp.png" alt="ERP services" style="width:170px;height:140px;">
+                    <h2>ERP</h2>
+                    <p>ERP solutions consultancy, design and implementation for all sectors.</p> 
+                  </div>
+                  </div>
+
+        </div>
+        
+
+        <div id="wlan" >
+            <div id="storage" >
+              <div class="grid-item">
+                    <img src="icons/wlan.png" alt="WLAN installation " style="width:170px;height:140px;">
+                    <h2>WIRELESS LAN SERVICES</h2>
+                    <p>Wireless LAN design, implementation, consultancy and optimization services.</p> 
+                  </div>
+                  </div>
+        </div>
+
+        <div id="wan" >
+            <div id="storage" >
+                <div class="grid-item">
+                    <img src="icons/wan.png" alt="WAN installation" style="width:170px;height:140px;">
+                    <h2>WAN SERVICES</h2> 
+                    <p>Wide Area Network Optimization services.</p> 
+                    </div>
+                    </div>
+        </div>
+
+        <div id="security" >
+            <div id="storage" >
+                <div class="grid-item">
+                    <img src="icons/security.png" alt="Cybersecurity" style="width:170px;height:140px;">
+                    <h2>SECURITY</h2>
+                    <p>Security assessment, design, implementation and consultancy services</p> 
+                  </div>
+                  </div>
+        </div>
+
+        <div id="training" >
+            <div id="storage" >
+                <div class="grid-item">
+                    <img src="icons/training.jpg" alt="IT trainings for your employees" style="width:170px;height:140px;">
+                    <h2>TRAININGS</h2>
+                    <p>Network management software retailing and trainings.</p> 
+                  </div>
+                  </div>
+        </div>
+
+        <div id="cctv" >
+            <div id="storage" >
+                <div class="grid-item">
+                    <img src="icons/cctv.png" alt="CCTV, PBX, IP TELEPHONY & CABLING" style="width:170px;height:140px;">
+                    <h2> CCTV, PBX, IP TELEPHONY & CABLING</h2>
+                    <p>CCTV, PBX, IP Telephony and Videoconferencing system design, implementation, consultancy and optimization services.
+
+                        Campus Network Cabling, Fiber splicing and termination.</p> 
+                  </div>
+                  </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- partners section -->
+    <div id="partners" class="container">
+      <br><br><br><br><h1>PARTNERS</h1>
+      <h2>INTERNATIONAL TECH LEADER PARTNERS.</h2>
+
+      
+      <section class="customer-logos slider partnerSlider">
+          <div class="slide"><img src="partners/citrix.png" alt="Citrix"></div>
+          <div class="slide"><img src="partners/dell.png" alt="Dell"></div>
+          <div class="slide"><img src="partners/fortinet.png" alt="Fortinet"></div>
+          <div class="slide"><img src="partners/hpe.png" alt="HP"></div>
+          <div class="slide"><img src="partners/me.png" alt="ManageEngine"></div>
+          <div class="slide"><img src="partners/microsoft.png" alt="Microsoft"></div>
+          <div class="slide"><img src="partners/solar.jpg" alt="SolarWinds"></div>
+          <div class="slide"><img src="partners/veam.png" alt="veeam"></div>
+       </section>
+
+    </div>
+
+    <!-- partners section -->
+    <div id="clients" class="container">
+     <br><br><br><br><h1>CLIENTS</h1>
+      <h2>SOME OF OUR CLIENTS</h2>
+
+      
+      <section class="customer-logos slider clientSlider">
+          <div class="slide"><img src="clients/ato.png"></div>
+          <div class="slide"><img src="clients/kaki.png" alt="Kaki P.L.C"></div>
+          <div class="slide"><img src="clients/lib.png" alt="Lion international bank"></div>
+          <div class="slide"><img src="clients/moha.jpg" alt="Moha"></div>
+          <div class="slide"><img src="clients/moi.png" alt="Ministry of Industry"></div>
+          <div class="slide"><img src="clients/noc.png" alt="National oil Ethiopia"></div>
+          <div class="slide"><img src="clients/sheraton.jpg" alt="Sheraton Addis"></div>
+       </section>
+       <h1>TESTIMONY</h1>
+          <h2>WHAT DO OUR CLIENTS SAY ABOUT US?</h2>
+       <div class="testimony  container">
+      
+        <section id="tstm_sec">
+	<div id="slider">
+      <div class="container">
+        <div class="slide">
+          	<h3>Testimony</h3>
+						<p>UT Solutions PLC has been a true game-changer in maintaining and enhancing our IT needs, and they have our highest endorsement in doing similar projects. </p>
+						<h6>- Melaku Kassahun, IT Director</h6>					
+						<h6 style="color: #ee2424;">- BGI Ethiopia</h6>
+        </div>
+        <div class="slide">
+						<h3>Testimony</h3>
+						<p>UT solutions have consulted,designed and supported our enterprise infrastructure system. Our team could not be more satisfied with your work, and we look forward to continuing this relationship. </p>
+						<h6>- Mengistu Alemayehu, Vice Director</h6>					
+						<h6 style="color: #ee2424;">- FDRE Imigration and Nationality Affairs</h6>
+        </div>
+        <div class="slide">
+         <h3>Testimony</h3>
+						<p>UT Solutions PLC offers ICT solution with very high quality of service, professionalism and on-time delivery; and we are satisfied with their work. I feel confident in recommending UT Solutions Professional services.</p>
+						<h6>- Solomon Tesfaye, IT Director</h6>					
+						<h6 style="color: #ee2424;">- Lion Interational Bank</h6>
+        </div>
+        <div class="slide">
+          <h3>Testimony</h3>
+						<p>We are very pleased to note our satisfacition with the computing and networking design and implementation at our HQ office by UT Solutions PLC. UT Solution' staff are qualified, professional and most of keep high integrity.</p>
+						<h6>- Ahmed Beshir, IT Manager</h6>
+						<h6 style="color: #ee2424;">- National Oli Ethiopia (NOC)</h6>
+        </div>
+        <div class="slide">
+          <h3>Testimony</h3>
+						<p>Since working together with UT Solutions we observed that they carefully monitor our system and its performance with effective reporting. And we are satisfied by their consistent service,</p>
+						<h6>- Walid Mohamed, General Manager</h6>
+						<h6 style="color: #ee2424;">- Ethiopian Electrometer PLC</h6>	
+        </div>
+      </div>
+    </div>
+</section>
+
+
+        </div>
+
+
+        <div id="contact" class="container">
+          <h1>CONTACT</h1>
+          <h2>CONTACT US</h2>
+          <div style="width: 40%; float:left; padding-right:40px">
+          <form>
+          <div class="form-group">
+            <h5 style="font-weight: bolder">Leave us a message and we will get back to you</h5>
+            <input class="form-control" placeholder="Your Name"></input><br>
+            <input class="form-control" type="email" placeholder="Your email "></input><br>
+            <textarea class="form-control" placehoder="message"></textarea><br>
+            <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+          </form>
+          </div>
+
+          <div style="width: 40%; float:right; padding-top:30px; padding-left: 30px">
+            <i class="glyphicon glyphicon-map-marker"></i><h5>Sheger Building 4th Floor Office No. 402, Addis Ababa, Ethiopia</h5>
+            <i class="glyphicon glyphicon-envelope"></i><h5>contact@utsolutionsplc.com (henoka@utsolutionsplc.com)</h5>
+            <i class="glyphicon glyphicon-phone-alt"></i><h5>+251911 310694 (+251 11 8294429)</h5>
+          </div>
+        </div>
+
+        <div class="map">
+        <h2>LOCATE US ON THE MAP</h2>
+        <div id="map"></div><br>
+        <h1> </h1>
+        <h1> </h1>
+        </div>
+
+        <div id="footer" class="">
+                    <i class="fab fa-facebook fa-2x logos"></i>
+                    <i class="fab fa-twitter fa-2x logos"></i>
+                    <i class="fab fa-linkedin-in fa-2x logos"></i>
+                    <i class="fab fa-skype fa-2x logos"></i>
+                    <i class="fab fa-google-plus-g fa-2x logos"></i>
+                    <h5>2019 UT solutions P.L.C</h5>
+                    <h5>Delivering Ultimate Technologies</h5>
+        </div>
+
+        </div>
+
+        
+
+
+    </body>
+    
+    <!-- client and partners slide --> 
+    <script>
+      $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 9.008705, lng: 38.776418};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI9QDD_0KNLvn_yCCzjDcKgndV0nlRpkc&callback=initMap">
+</script>
+    </html>
