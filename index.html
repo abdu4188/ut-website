@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   
   <title>UT Solutions- Ethiopia's leading It company</title>
-  <link rel="icon" type="image/ico" href="images/UT.png" />
-  <meta name="description" content="UT solutions is one of the top all round IT services provider in Ethiopia. We provide quality technology solutions for small to huge companies. Contact us to join our list of satisfied customers">
-  <meta name="keywords" content="technology, software development, Ethiopia, Addis Ababa, Networking, ERP, Cybersecurity, CCTV, technology trainning ">
+  <link rel="icon" type="image/ico" href="images/ut.ico" />
+  <meta name="description" content="UT Solutions is an IT solution company in Ethiopia that works in networking, server, backup, pbx and many others. We are also partners with international tech leaders like, Microsoft, Cisco, ManageEngine, veeam and many others.">
+  <meta name="keywords" content="networking Ethiopia, server Ethiopia, pbx Ethiopia, cisco Ethiopia, ManageEngine Ethiopia, Microsoft Ethiopia, Hp Ethiopia, veam Ethiopia, IT solutions Ethiopia, technology training Ethiopia">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -19,6 +20,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/1a1f127cec.js"></script>
+<script src="js/modernizr.custom.js"></script>
 <link href="bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -27,10 +29,10 @@
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
+  
   </script>
   <div class="se-pre-con"></div>
-  <div class="body-container">
-    <nav class="navbar navbar-default navbar-fixed-top shadow p-3 mb-5 bg-white rounded" >
+    <nav class=" shadow p-3 mb-5 navbar navbar-default navbar-fixed-top shadow p-3 mb-5 bg-white rounded" >
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a href="#" class="pull-left"><img src="images/UT.png" style="width: 180px; height: 40px"></a> 
+          <a href="#" class="pull-left navbar-brand"><img id="logo" src="images/ut-logo-white.png" style="width: 180px; height: 40px;"></a> 
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -48,18 +50,39 @@
             <li><a href="#partners">PARTNERS</a></li>
             <li><a href="#clients ">CLIENTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a href="">HELP DESK</a></li>
+            <li><a href="blog/catalog.php"> BLOG</a> </li>
+            <li><a href="https://www.utsolutionsplc.com/uthelpdesk">HELP DESK</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <section id="homeSection">
+    <script>
+      $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+      $('link[href="nav.css"]').remove();      
+      $("#logo").attr("src" , "images/UT.png");
+    } else {
+      $('head').append('<link rel="stylesheet" type="text/css" href="nav.css">');
+      $("#logo").attr("src" , "images/ut-logo-white.png");
+    }
+});
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+    </script>
+    <header>
+    <div id="homeSection">
             <div class="content-slider">
                     <div class="slider">
                       <div class="mask">
                         <ul>
                           <li class="anim1">
-                            <div class="title"><img src="imgs/UT.PNG" alt="UT solutions" style="width: auto; height: 95px;" /></div>
+                            <div class="title"><img src="images/UT.PNG" alt="UT solutions" style="width: auto; height: 95px;" /></div>
                             <hr width="70%">
                             <div class="source">Delivering Ultimate Technologies</div>
                             <hr width="70%">
@@ -88,109 +111,93 @@
                       </div>
                     </div>
                   </div>
-    </section>
+                </div>
+              </header>
 
     <!-- about section -->
     <div id="about" class="container">
             <br><br><br><h1>About</h1>
             <h2>UT solutions PLC</h2>
-            <div class="desc"><p>UT Solutions PLC is a professional service based company originally from Addis Ababa, Ethiopia. UT Solutions PLC specializes in providing all-rounded IT solutions for businesses ranging from local to international, small to corporate status, Private to Governmental.</p></div>
+            <div class="desc"><p>UT Solutions PLC is a professional service based company originally from Addis Ababa, Ethiopia. UT Solutions PLC specializes in providing all-rounded IT solutions for businesses ranging from local to international, small to corporate status, Private to Governmental. We have been providing quality services in Networking, Server and Backup, PBX, Telephony, technology traininngs and ERPs for the past six years. We have partnered with international tech giants Cisco, Microsoft, ManageEngine, Veeam, HP and many others.</p></div>
     </div>
 
     <!-- services section -->
-    <div id="services" >
-        <br><br><br><h1>Services</h1>
+    <div id="services">
+        <h1>Services</h1>
         <h2>Our Services</h2>
       
-      <div  class="grid-container grid.effect">
-          
-        <div id="networking" >
-          <div class="grid-item">
-                  <img src="icons/networking.png" alt="Networking and computing" style="width:170px;height:140px;">
-                  <h2>NETWORKING & COMPUTING</h2>
-               
-                  <p>Enterprise to Small Business Networking and Computing design, implementation, consultancy and optimization services.</p> 
-                </div>
-          </div>
-            
-          <div id="storage" >
-              <div class="grid-item">
-                <img src="icons/storage.png" alt="Storage services" style="width:170px;height:140px;">
-                <h2>STORAGE & BACKUP</h2>
-                <p>Storage and Backup solutions design, implementation, consultancy and optimization services.</p> 
-              </div>
-            </div>
-        
-
-        <div id="erp" >
-            <div id="storage" >
-                <div class="grid-item">
-                    <img src="icons/erp.png" alt="ERP services" style="width:170px;height:140px;">
-                    <h2>ERP</h2>
-                    <p>ERP solutions consultancy, design and implementation for all sectors.</p> 
-                  </div>
-                  </div>
-
-        </div>
-        
-
-        <div id="wlan" >
-            <div id="storage" >
-              <div class="grid-item">
-                    <img src="icons/wlan.png" alt="WLAN installation " style="width:170px;height:140px;">
-                    <h2>WIRELESS LAN SERVICES</h2>
-                    <p>Wireless LAN design, implementation, consultancy and optimization services.</p> 
-                  </div>
-                  </div>
-        </div>
-
-        <div id="wan" >
-            <div id="storage" >
-                <div class="grid-item">
-                    <img src="icons/wan.png" alt="WAN installation" style="width:170px;height:140px;">
-                    <h2>WAN SERVICES</h2> 
-                    <p>Wide Area Network Optimization services.</p> 
-                    </div>
-                    </div>
-        </div>
-
-        <div id="security" >
-            <div id="storage" >
-                <div class="grid-item">
-                    <img src="icons/security.png" alt="Cybersecurity" style="width:170px;height:140px;">
-                    <h2>SECURITY</h2>
-                    <p>Security assessment, design, implementation and consultancy services</p> 
-                  </div>
-                  </div>
-        </div>
-
-        <div id="training" >
-            <div id="storage" >
-                <div class="grid-item">
-                    <img src="icons/training.jpg" alt="IT trainings for your employees" style="width:170px;height:140px;">
-                    <h2>TRAININGS</h2>
-                    <p>Network management software retailing and trainings.</p> 
-                  </div>
-                  </div>
-        </div>
-
-        <div id="cctv" >
-            <div id="storage" >
-                <div class="grid-item">
-                    <img src="icons/cctv.png" alt="CCTV, PBX, IP TELEPHONY & CABLING" style="width:170px;height:140px;">
-                    <h2> CCTV, PBX, IP TELEPHONY & CABLING</h2>
-                    <p>CCTV, PBX, IP Telephony and Videoconferencing system design, implementation, consultancy and optimization services.
-
-                        Campus Network Cabling, Fiber splicing and termination.</p> 
-                  </div>
-                  </div>
-        </div>
-
-
-      </div>
-
+        <ul id="hexGrid">
+          <li class="hex">
+              <a class="hexIn" href="services/cctv.html">
+                  
+                <i class="fa fa-video fa-6x logos"></i>
+                  <h1>CCTV</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          <!-- fa0404 -->
+          <li class="hex">
+              <a class="hexIn" href="services/erp.html">
+                <i class="fab fa-connectdevelop fa-6x logos"></i>
+                  <h1>ERP</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          <li class="hex">
+              <a class="hexIn" href="services/networking.html">
+                <i class="fa fa-network-wired fa-6x logos"></i>
+                  <h1 style="font-size: 20px;">Networking and computing</h1>
+                  <p>Read More </p>
+              </a>
+          </li>
+          <li class="hex">
+              <a class="hexIn" href="services/security.html">
+                <i class="fa fa-lock fa-6x logos"></i>
+                  <h1>Security</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          <li class="hex">
+              <a class="hexIn" href="services/storage.html">
+                <i class="fa fa-server fa-6x logos"></i>
+                  <h1>Storage and Backup</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          <li class="hex">
+              <a class="hexIn" href="services/training.html">
+                <i class="fa fa-brain fa-6x logos"></i>
+                  <h1>Training</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+         <li class="hex">
+              <a class="hexIn" href="services/wan.html">
+                <i class="fa fa-globe fa-6x logos"></i>
+                  <h1>Wide Area Network</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          <li class="hex">
+              <a class="hexIn" href="services/wlan.html">
+                <i class="fa fa-wifi fa-6x logos"></i>
+                  <h1>WLAN services</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+          >
+          <li class="hex">
+              <a class="hexIn" href="services/pbx.html">
+                <i class="fa fa-phone-square fa-6x logos"></i>
+                  <h1>PBX and IP Telephony</h1>
+                  <p>Read More</p>
+              </a>
+          </li>
+         
+      </ul>
     </div>
 
+    <br><br><br><br>
 
     <!-- partners section -->
     <div id="partners" class="container">
@@ -198,17 +205,18 @@
       <h2>INTERNATIONAL TECH LEADER PARTNERS.</h2>
 
       
-      <section class="customer-logos slider partnerSlider">
-          <div class="slide"><img src="partners/citrix.png" alt="Citrix"></div>
-          <div class="slide"><img src="partners/dell.png" alt="Dell"></div>
-          <div class="slide"><img src="partners/fortinet.png" alt="Fortinet"></div>
-          <div class="slide"><img src="partners/hpe.png" alt="HP"></div>
-          <div class="slide"><img src="partners/me.png" alt="ManageEngine"></div>
-          <div class="slide"><img src="partners/microsoft.png" alt="Microsoft"></div>
-          <div class="slide"><img src="partners/solar.jpg" alt="SolarWinds"></div>
-          <div class="slide"><img src="partners/veam.png" alt="veeam"></div>
-       </section>
-
+      <div class="logo-grid">
+          <ul>
+              <li><a href="#" class="square"><img src="partners/citrix.png" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="partners/dell.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#" class="tall"><img  src="partners/fortinet.png" alt="" style="height:200px; width:200px;"></a></li>     
+              <li><a href="#"><img src="partners/hpe.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="partners/me.png" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="partners/microsoft.png" alt="" style="height:200px; width:200px;"></a></li>    
+              <li><a href="#"><img src="partners/solar.jpg" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="partners/veam.png" alt="" style="height:200px; width:200px;"></a></li> 
+          </ul>
+      </div>
     </div>
 
     <!-- partners section -->
@@ -217,18 +225,41 @@
       <h2>SOME OF OUR CLIENTS</h2>
 
       
-      <section class="customer-logos slider clientSlider">
-          <div class="slide"><img src="clients/ato.png"></div>
-          <div class="slide"><img src="clients/kaki.png" alt="Kaki P.L.C"></div>
-          <div class="slide"><img src="clients/lib.png" alt="Lion international bank"></div>
-          <div class="slide"><img src="clients/moha.jpg" alt="Moha"></div>
-          <div class="slide"><img src="clients/moi.png" alt="Ministry of Industry"></div>
-          <div class="slide"><img src="clients/noc.png" alt="National oil Ethiopia"></div>
-          <div class="slide"><img src="clients/sheraton.jpg" alt="Sheraton Addis"></div>
-       </section>
+      <div class="logo-grid">
+          <ul>
+              <li><a href="#" class="square"><img src="clients/ale.png" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="clients/ato.png" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#" class="tall"><img  src="clients/boa.jpg" alt="" style="height:200px; width:200px;"></a></li>     
+              <li><a href="#"><img src="clients/derba.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/eeu.png" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="clients/ericsson.png" alt="" style="height:200px; width:200px;"></a></li>    
+              <li><a href="#"><img src="clients/horizon addis.jpg" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/idea.jpg" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="clients/kaki.png" alt="" style="height:200px; width:200px;"></a></li>    
+              <li><a href="#"><img src="clients/lib.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/moha.jpg" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="clients/moi.png" alt="" style="height:200px; width:200px;"></a></li>    
+              <li><a href="#"><img src="clients/noc.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/ose.jpg" alt="" style="height:200px; width:200px;"></a></li>
+              <li><a href="#" ><img src="clients/qua.png" alt="" style="height:200px; width:200px;"></a></li>    
+              <li><a href="#"><img src="clients/sheraton.jpg" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/wolayita.png" alt="" style="height:200px; width:200px;"></a></li> 
+              <li><a href="#"><img src="clients/zeb.png" alt="" style="height:200px; width:200px;"></a></li>
+               
+          
+          
+          
+          </ul>
+      </div>
+      <br><br><br><br><br><br>
+
+
+
        <h1>TESTIMONY</h1>
           <h2>WHAT DO OUR CLIENTS SAY ABOUT US?</h2>
        <div class="testimony  container">
+          <div class="row">
+              <div class="col-lg-12">
       
         <section id="tstm_sec">
 	<div id="slider">
@@ -266,41 +297,44 @@
       </div>
     </div>
 </section>
+</div>
+</div>
 
 
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
         <div id="contact" class="container">
           <h1>CONTACT</h1>
           <h2>CONTACT US</h2>
-          <div style="width: 40%; float:left; padding-right:40px">
-          <form>
+          <div style="width: 50%; float:left; padding-right:40px">
+          <form action="form.php" method="post">
           <div class="form-group">
             <h5 style="font-weight: bolder">Leave us a message and we will get back to you</h5>
-            <input class="form-control" placeholder="Your Name"></input><br>
-            <input class="form-control" type="email" placeholder="Your email "></input><br>
-            <textarea class="form-control" placehoder="message"></textarea><br>
+            Name:<input class="form-control" name="name" placeholder="Your Name" required></input><br>
+            Email Address:</Address><input class="form-control" name="email" type="email" placeholder="Your email " required></input><br>
+            Your Message:<textarea class="form-control" name="message" placehoder="message" required></textarea><br>
             <button class="btn btn-primary" type="submit">Send</button>
             </div>
           </form>
           </div>
 
-          <div style="width: 40%; float:right; padding-top:30px; padding-left: 30px">
+          <div style="width: 50%; float:right; padding-top:30px; padding-left: 10px">
             <i class="glyphicon glyphicon-map-marker"></i><h5>Sheger Building 4th Floor Office No. 402, Addis Ababa, Ethiopia</h5>
             <i class="glyphicon glyphicon-envelope"></i><h5>contact@utsolutionsplc.com (henoka@utsolutionsplc.com)</h5>
             <i class="glyphicon glyphicon-phone-alt"></i><h5>+251911 310694 (+251 11 8294429)</h5>
           </div>
         </div>
 
-        <div class="map">
+        <div class="map" >
         <h2>LOCATE US ON THE MAP</h2>
         <div id="map"></div><br>
         <h1> </h1>
         <h1> </h1>
         </div>
 
-        <div id="footer" class="">
+        <div id="footer" class="shadow p-3">
                     <i class="fab fa-facebook fa-2x logos"></i>
                     <i class="fab fa-twitter fa-2x logos"></i>
                     <i class="fab fa-linkedin-in fa-2x logos"></i>
@@ -317,6 +351,8 @@
 
     </body>
     
+    
+
     <!-- client and partners slide --> 
     <script>
       $(document).ready(function(){
@@ -342,18 +378,20 @@
     });
 });
 
+
+
 function initMap() {
   // The location of Uluru
   var uluru = {lat: 9.008705, lng: 38.776418};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
+      document.getElementById('map'), {zoom: 15, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
     </script>
-
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcFXoTtsHwt6WFIrh20RngoNkrd3nvCf8&callback=mymap"></script>-->
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI9QDD_0KNLvn_yCCzjDcKgndV0nlRpkc&callback=initMap">
-</script>
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcFXoTtsHwt6WFIrh20RngoNkrd3nvCf8&callback=initMap">
+</script> 
     </html>
