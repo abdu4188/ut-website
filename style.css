@@ -972,7 +972,7 @@ p{
 }
 .grey-container{
   background-color: rgb(240, 240, 240);
-  -webkit-clip-path: ellipse(60% 80% at 0% 0%);
+  -webkit-clip-path: ellipse(100% 87% at 50% 0%);
   clip-path: ellipse(100% 87% at 50% 0%);
 }
 #clients_sec{
