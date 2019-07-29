@@ -52,7 +52,7 @@
     width: 98.7vw;
     height: 114.5vh;
     padding-top: 140px;
-    -webkit-clip-path: ellipse(60% 80% at 0% 0%);
+    -webkit-clip-path: ellipse(100% 87% at 50% 0%);
     clip-path: ellipse(100% 87% at 50% 0%);
 
   /* Create the parallax scrolling effect */
@@ -1084,4 +1084,14 @@ html {
     
     .logo-grid .square {
       padding: 42px;
+    }
+    @keyframes slideInleft {
+      0% {
+        opacity: 0;
+        transform: translateX(50%); 
+      }
+      100% {
+        opacity: 1;
+        transform: none; 
+      } 
     }
